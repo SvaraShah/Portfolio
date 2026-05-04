@@ -28,11 +28,11 @@ export const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-white/80 font-medium mb-4 leading-relaxed">
-            Crafting elegant, user-focused web experiences with a blend of creativity, precision, and real-world impact.
+            Crafting elegant, user-focused web experiences with precision and purpose.
           </p>
           
-          <p className="text-lg text-white/60 mb-10 max-w-xl">
-            Computer Science Engineering student passionate about building intuitive, scalable, and visually engaging web applications.
+          <p className="text-lg text-white/60 mb-10 max-w-2xl leading-relaxed">
+            Future SAP professional and CSE student, passionate about developing enterprise-grade solutions that bridge technology and business — delivering scalable, impactful, and industry-relevant applications.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -74,22 +74,6 @@ export const Hero = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            
-            {/* Floating Elements */}
-            <motion.div
-              animate={{ y: [0, -20, 0] }}
-              transition={{ duration: 4, repeat: Infinity }}
-              className="absolute -top-4 -right-4 p-4 glass-card rounded-2xl"
-            >
-              <div className="text-2xl">💻</div>
-            </motion.div>
-            <motion.div
-              animate={{ y: [0, 20, 0] }}
-              transition={{ duration: 5, repeat: Infinity }}
-              className="absolute -bottom-4 -left-4 p-4 glass-card rounded-2xl"
-            >
-              <div className="text-2xl">🚀</div>
-            </motion.div>
           </div>
         </motion.div>
       </div>

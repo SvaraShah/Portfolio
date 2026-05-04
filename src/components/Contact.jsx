@@ -5,7 +5,7 @@ const socialLinks = [
   { icon: <Github size={24} />, href: "https://github.com/SvaraShah", name: "GitHub" },
   { icon: <Linkedin size={24} />, href: "https://www.linkedin.com/in/svara-shah-40b39831b/", name: "LinkedIn" },
   { icon: <Instagram size={24} />, href: "https://www.instagram.com/svarashah?igsh=cWZ0dXJpdmlpajc=", name: "Instagram" },
-  { icon: <Mail size={24} />, href: "mailto:svarashah@example.com", name: "Email" },
+  { icon: <Mail size={24} />, href: "mailto:svarashah215@gmail.com", name: "Email" },
   { icon: <Phone size={24} />, href: "tel:+919820028430", name: "Phone" },
 ];
 
@@ -15,11 +15,11 @@ export const Contact = () => {
       {/* Background decoration */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[100px] -z-10" />
 
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-6xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          className="glass-card p-12 md:p-20 relative overflow-hidden"
+          className="glass-card p-8 md:p-16 relative overflow-hidden"
         >
           <div className="relative z-10">
             <h2 className="text-4xl md:text-6xl font-bold mb-6">Let's Get In Touch</h2>
@@ -27,30 +27,25 @@ export const Contact = () => {
               Feel free to reach out for collaborations, opportunities, or just a quick hello!
             </p>
 
-            <div className="flex flex-wrap justify-center gap-6 mb-12">
+            <div className="flex flex-wrap justify-center gap-8 md:gap-12 mt-8">
               {socialLinks.map((link) => (
                 <motion.a
                   key={link.name}
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  whileHover={{ y: -5, scale: 1.1 }}
-                  className="p-4 glass-card hover:bg-primary/20 hover:border-primary/50 transition-all duration-300"
-                  aria-label={link.name}
+                  whileHover={{ y: -5, scale: 1.05 }}
+                  className="flex flex-col items-center gap-3 group"
                 >
-                  {link.icon}
+                  <div className="p-4 glass-card group-hover:bg-primary/20 group-hover:border-primary/50 transition-all duration-300">
+                    {link.icon}
+                  </div>
+                  <span className="text-sm font-bold text-white/60 group-hover:text-primary transition-colors tracking-widest uppercase">
+                    {link.name}
+                  </span>
                 </motion.a>
               ))}
             </div>
-
-            <motion.a
-              href="mailto:svarashah@example.com"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-3 px-10 py-4 bg-primary rounded-2xl font-bold text-lg shadow-lg shadow-primary/30"
-            >
-              Send a Message <Send size={20} />
-            </motion.a>
           </div>
         </motion.div>
       </div>

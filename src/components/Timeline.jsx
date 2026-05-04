@@ -34,9 +34,9 @@ const timelineData = [
 
 export const Timeline = () => {
   return (
-    <section id="journey" className="section-padding relative overflow-hidden">
+    <section id="journey" className="py-20 pb-10 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-20">
+        <div className="text-center mb-16">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -54,38 +54,46 @@ export const Timeline = () => {
           </motion.p>
         </div>
 
-        <div className="relative">
-          {/* Vertical Line */}
-          <div className="absolute left-1/2 -translate-x-1/2 h-full w-1 bg-gradient-to-b from-primary/50 via-secondary/50 to-primary/50 rounded-full md:block hidden" />
+        <div className="relative mt-20">
+          {/* Central Horizontal Line */}
+          <div className="absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-primary/50 via-secondary/50 to-primary/50 rounded-full -translate-y-1/2 md:block hidden" />
           
-          <div className="space-y-12">
+          <div className="flex flex-col md:flex-row gap-12 md:gap-24 relative z-10 overflow-x-auto py-20 no-scrollbar scroll-smooth snap-x min-h-[650px]">
             {timelineData.map((item, index) => (
-              <div key={index} className="relative flex items-center justify-center md:justify-between group">
-                {/* Center Glow Dot */}
-                <div className="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-background border-2 border-primary rounded-full z-10 shadow-[0_0_15px_rgba(139,92,246,0.5)] md:block hidden group-hover:scale-125 transition-transform" />
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: index % 2 === 0 ? -50 : 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="min-w-full md:min-w-[500px] snap-center flex flex-col px-8 relative"
+              >
+                {/* Central Dot - Always centered vertically */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-background border-4 border-primary rounded-full z-20 shadow-[0_0_20px_rgba(139,92,246,0.6)] md:block hidden animate-pulse-glow" />
 
-                {/* Content Card */}
-                <motion.div
-                  initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, margin: "-100px" }}
-                  className={`w-full md:w-[45%] glass-card p-6 md:p-8 hover:shadow-[0_0_30px_rgba(139,92,246,0.15)] relative ${
-                    index % 2 === 0 ? "md:text-right" : "md:text-left md:ml-auto"
-                  }`}
-                >
-                  <div className={`flex items-center gap-4 mb-4 ${index % 2 === 0 ? "md:flex-row-reverse" : ""}`}>
-                    <div className="p-3 glass rounded-xl">
-                      {item.icon}
+                {/* Vertical Connector Line from Dot to Card */}
+                {index % 2 === 0 ? (
+                  <div className="absolute bottom-[calc(50%+12px)] left-1/2 -translate-x-1/2 w-0.5 h-32 bg-gradient-to-t from-primary/40 to-transparent md:block hidden" />
+                ) : (
+                  <div className="absolute top-[calc(50%+12px)] left-1/2 -translate-x-1/2 w-0.5 h-32 bg-gradient-to-b from-primary/40 to-transparent md:block hidden" />
+                )}
+
+                <div className={`h-full flex flex-col ${index % 2 === 0 ? "justify-start" : "justify-end"}`}>
+                  <div className="glass-card p-6 md:p-8 hover:shadow-[0_0_30px_rgba(139,92,246,0.15)] relative group">
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="p-3 glass rounded-xl group-hover:bg-primary/20 transition-all">
+                        {item.icon}
+                      </div>
+                      <div>
+                        <span className="text-xs font-bold text-primary tracking-widest uppercase">{item.date}</span>
+                        <h3 className="text-xl font-bold text-white line-clamp-1">{item.title}</h3>
+                      </div>
                     </div>
-                    <div>
-                      <span className="text-xs font-bold text-primary tracking-widest uppercase">{item.date}</span>
-                      <h3 className="text-xl font-bold text-white">{item.title}</h3>
-                    </div>
+                    <h4 className="text-secondary font-medium mb-3">{item.subtitle}</h4>
+                    <p className="text-white/60 leading-relaxed text-sm">{item.description}</p>
                   </div>
-                  <h4 className="text-secondary font-medium mb-3">{item.subtitle}</h4>
-                  <p className="text-white/60 leading-relaxed">{item.description}</p>
-                </motion.div>
-              </div>
+                </div>
+              </motion.div>
             ))}
           </div>
         </div>
