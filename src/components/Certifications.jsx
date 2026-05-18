@@ -3,26 +3,11 @@ import { Award, ExternalLink, ShieldCheck } from "lucide-react";
 
 const certifications = [
   {
-    name: "AWS Cloud Club – DevOps meets AI",
-    issuer: "Parul University",
-    link: "https://drive.google.com/file/d/1-XbxcNenQQz4FWmoRHvJoneWr2yehZKt/view?usp=sharing",
-    date: "2026",
-    icon: <Award className="text-primary" />
-  },
-
-  {
     name: "Software Engineering Intern",
     issuer: "Hacker Rank",
     link: "https://drive.google.com/file/d/1NAzSoS31gqBb3znWL7qrlUME3zfxFD0T/view?usp=sharing",
     date: "2025",
     icon: <ShieldCheck className="text-secondary" />
-  },
-  {
-    name: "AI Impact Summit 2026",
-    issuer: "HCL Guvi",
-    link: "https://drive.google.com/file/d/1Rcl7J_NM-KnxgvsuSnpe2esWlLlIh5Xe/view?usp=sharing",
-    date: "2026",
-    icon: <Award className="text-primary" />
   },
   {
     name: "Python Certificate",
@@ -31,13 +16,7 @@ const certifications = [
     date: "2025",
     icon: <ShieldCheck className="text-secondary" />
   },
-  {
-    name: "Statistics 101",
-    issuer: "IBM",
-    link: "https://drive.google.com/file/d/1NfKElDoQCF_wCkUXKYKJjV5-OqTnS4Pk/view?usp=sharing",
-    date: "2024",
-    icon: <Award className="text-primary" />
-  },
+
   {
     name: "Techfest CoP",
     issuer: "IIT Bombay",
@@ -46,20 +25,6 @@ const certifications = [
     icon: <ShieldCheck className="text-secondary" />
   },
 
-  {
-    name: "MS SQL - Certificate",
-    issuer: "Intellipaat",
-    link: "https://drive.google.com/file/d/1EEdWHzXRfxlyxTflXPEIKmVp1MKUv-RH/view?usp=sharing",
-    date: "2025",
-    icon: <ShieldCheck className="text-secondary" />
-  },
-  {
-    name: "Python Certificate",
-    issuer: "Intellipaat",
-    link: "https://drive.google.com/file/d/1jQ0Zptzqyn90WZXDL5goPna_fQapYtJo/view?usp=sharing",
-    date: "2025",
-    icon: <Award className="text-primary" />
-  },
   {
     name: "SQL Certificate",
     issuer: "Intellipaat",
