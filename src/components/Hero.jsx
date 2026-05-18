@@ -55,7 +55,7 @@ export const Hero = () => {
               View My Work <ArrowRight size={20} />
             </motion.a>
             <motion.a
-              href="https://drive.google.com/file/d/1NnjlPNIQgt-8z3YzFpFPStxR5I2-cBId/view?usp=sharing"
+              href="https://drive.google.com/file/d/1gjqWPPAp_nj3GoIWa6Z7AfjtSI44aZjH/view?usp=sharing"
               target="_blank"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

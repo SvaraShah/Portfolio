@@ -54,7 +54,7 @@ export const Contact = () => {
               className="mt-16 flex justify-center"
             >
               <a
-                href="https://drive.google.com/file/d/1NnjlPNIQgt-8z3YzFpFPStxR5I2-cBId/view?usp=sharing"
+                href="https://drive.google.com/file/d/1gjqWPPAp_nj3GoIWa6Z7AfjtSI44aZjH/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 bg-primary text-white rounded-xl font-bold flex items-center gap-2 hover:bg-primary/90 transition-colors shadow-lg shadow-primary/25"
