@@ -33,7 +33,7 @@ export const Projects = () => {
               whileInView={{ opacity: 1, x: 0 }}
               className="text-3xl md:text-5xl font-bold mb-4"
             >
-              Featured Projects
+              Hands-on Projects
             </motion.h2>
             <motion.p 
               initial={{ opacity: 0, x: -20 }}

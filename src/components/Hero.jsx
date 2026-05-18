@@ -20,20 +20,30 @@ export const Hero = () => {
             transition={{ delay: 0.2 }}
             className="inline-block px-4 py-1.5 glass rounded-full text-xs font-semibold tracking-wider text-primary mb-6"
           >
-            AVAILABLE FOR OPPORTUNITIES
+            AVAILABLE FOR SOFTWARE DEVELOPER ROLE
           </motion.div>
           
           <h1 className="text-4xl md:text-7xl font-extrabold mb-6 leading-tight whitespace-nowrap">
             I'm <span className="glow-text uppercase">SVARA SHAH</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-white/80 font-medium mb-4 leading-relaxed">
+          <p className="text-lg md:text-xl text-white/80 font-medium mb-3 leading-relaxed">
             Crafting elegant, user-focused web experiences with precision and purpose.
           </p>
           
-          <p className="text-lg text-white/60 mb-10 max-w-2xl leading-relaxed">
-            Future SAP professional and CSE student, passionate about developing enterprise-grade solutions that bridge technology and business — delivering scalable, impactful, and industry-relevant applications.
+          <p className="text-base text-white/60 mb-6 max-w-xl leading-relaxed">
+            Computer Science Engineering student passionate about web development, SAP technologies, and building scalable digital solutions. I enjoy creating clean, user-friendly applications while continuously improving my problem-solving and development skills through real-world projects and hands-on learning.
           </p>
+
+          <div className="flex flex-col gap-3 mb-10">
+            <span className="font-semibold text-primary/80 uppercase tracking-wider text-sm">Core Skills</span>
+            <div className="flex flex-wrap items-center gap-3 text-sm font-medium">
+              <span className="px-4 py-2 rounded-full glass border border-white/10 text-white/80">HTML, CSS & JavaScript</span>
+              <span className="px-4 py-2 rounded-full glass border border-white/10 text-white/80">Data Structures & Problem Solving</span>
+              <span className="px-4 py-2 rounded-full glass border border-white/10 text-white/80">SAP Technologies</span>
+              <span className="px-4 py-2 rounded-full glass border border-white/10 text-white/80">UI/UX Web Dev</span>
+            </div>
+          </div>
 
           <div className="flex flex-wrap gap-4">
             <motion.a

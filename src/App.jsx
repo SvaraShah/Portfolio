@@ -1,6 +1,5 @@
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
-import { About } from "./components/About";
 import { Timeline } from "./components/Timeline";
 import { Projects } from "./components/Projects";
 import { Certifications } from "./components/Certifications";
@@ -32,7 +31,6 @@ function App() {
       
       <main>
         <Hero />
-        <About />
         <Timeline />
         <Projects />
         <Certifications />

@@ -9,20 +9,7 @@ const certifications = [
     date: "2026",
     icon: <Award className="text-primary" />
   },
-  {
-    name: "Cisco - Introduction to Data Science",
-    issuer: "Cisco",
-    link: "https://drive.google.com/file/d/1wNXqMTI0_D6SEyoVNQuHg-TvKmibuZzh/view?usp=sharing",
-    date: "2025",
-    icon: <ShieldCheck className="text-secondary" />
-  },
-  {
-    name: "DEVTrails University Hackathon",
-    issuer: "DEVTrails",
-    link: "https://drive.google.com/file/d/1K1NeglJBJrWO-LITXubyDwoENhQ6Mjm-/view?usp=sharing",
-    date: "2026",
-    icon: <Award className="text-primary" />
-  },
+
   {
     name: "Software Engineering Intern",
     issuer: "Hacker Rank",
@@ -58,13 +45,7 @@ const certifications = [
     date: "2024",
     icon: <ShieldCheck className="text-secondary" />
   },
-  {
-    name: "Data Science Hackathon - CoP",
-    issuer: "IIT Kharagpur",
-    link: "https://drive.google.com/file/d/1WXRo3dhBWPqFrvmqMTuCFc79xfm9aArz/view?usp=sharing",
-    date: "2025",
-    icon: <Award className="text-primary" />
-  },
+
   {
     name: "MS SQL - Certificate",
     issuer: "Intellipaat",
@@ -86,13 +67,7 @@ const certifications = [
     date: "2025",
     icon: <ShieldCheck className="text-secondary" />
   },
-  {
-    name: "Lakshagriha 4.0 Certificate",
-    issuer: "Parul University",
-    link: "https://drive.google.com/file/d/1vHf-Qc_ylICJ5huzDut9op4kqVb0xlaQ/view?usp=sharing",
-    date: "2024",
-    icon: <Award className="text-primary" />
-  },
+
   {
     name: "HTML CSS Certificate",
     issuer: "Pearsons",

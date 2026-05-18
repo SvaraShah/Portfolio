@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin, Instagram, Send, Phone } from "lucide-react";
+import { Mail, Github, Linkedin, Instagram, Send, Phone, Download } from "lucide-react";
 
 const socialLinks = [
   { icon: <Github size={24} />, href: "https://github.com/SvaraShah", name: "GitHub" },
@@ -46,6 +46,22 @@ export const Contact = () => {
                 </motion.a>
               ))}
             </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              className="mt-16 flex justify-center"
+            >
+              <a
+                href="https://drive.google.com/file/d/1NnjlPNIQgt-8z3YzFpFPStxR5I2-cBId/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 bg-primary text-white rounded-xl font-bold flex items-center gap-2 hover:bg-primary/90 transition-colors shadow-lg shadow-primary/25"
+              >
+                Download Resume <Download size={20} />
+              </a>
+            </motion.div>
           </div>
         </motion.div>
       </div>

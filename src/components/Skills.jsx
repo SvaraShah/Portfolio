@@ -1,31 +1,54 @@
 import { motion } from "framer-motion";
-import { Code2, Monitor, Database, Cpu, Layout, Boxes } from "lucide-react";
+import { Code2, Monitor, Database, Cpu, Layout, Boxes, FileCode2, Palette, FileJson, Atom, Coffee, Terminal, Binary, DatabaseZap, Github, AppWindow, Network, Workflow, Settings, Activity } from "lucide-react";
 
 const skillCategories = [
   {
     title: "FRONTEND DEVELOPMENT",
     icon: <Layout className="text-primary" />,
-    skills: ["HTML5", "CSS3", "JavaScript", "React"]
+    skills: [
+      { name: "HTML5", icon: <FileCode2 size={16} className="text-primary" /> },
+      { name: "CSS3", icon: <Palette size={16} className="text-primary" /> },
+      { name: "JavaScript", icon: <FileJson size={16} className="text-primary" /> },
+      { name: "React", icon: <Atom size={16} className="text-primary" /> }
+    ]
   },
   {
     title: "BACKEND / PROGRAMMING",
     icon: <Code2 className="text-secondary" />,
-    skills: ["Java", "Python", "C", "C++"]
+    skills: [
+      { name: "Java", icon: <Coffee size={16} className="text-secondary" /> },
+      { name: "Python", icon: <Terminal size={16} className="text-secondary" /> },
+      { name: "C", icon: <Binary size={16} className="text-secondary" /> },
+      { name: "C++", icon: <Code2 size={16} className="text-secondary" /> }
+    ]
   },
   {
     title: "CORE ENGINEERING",
     icon: <Cpu className="text-primary" />,
-    skills: ["Data Structures", "OOP", "DBMS", "OS"]
+    skills: [
+      { name: "Data Structures", icon: <Network size={16} className="text-primary" /> },
+      { name: "OOP", icon: <Workflow size={16} className="text-primary" /> },
+      { name: "DBMS", icon: <DatabaseZap size={16} className="text-primary" /> },
+      { name: "OS", icon: <Settings size={16} className="text-primary" /> }
+    ]
   },
   {
     title: "DATABASE & TOOLS",
     icon: <Database className="text-secondary" />,
-    skills: ["SQL", "SQLite", "GitHub", "VS Code"]
+    skills: [
+      { name: "SQL", icon: <Database size={16} className="text-secondary" /> },
+      { name: "SQLite", icon: <Database size={16} className="text-secondary" /> },
+      { name: "GitHub", icon: <Github size={16} className="text-secondary" /> },
+      { name: "VS Code", icon: <AppWindow size={16} className="text-secondary" /> }
+    ]
   },
   {
     title: "SAP / ERP",
     icon: <Boxes className="text-primary" />,
-    skills: ["SAP HANA (Basics)", "ABAP (Fundamentals)"]
+    skills: [
+      { name: "SAP HANA (Basics)", icon: <Activity size={16} className="text-primary" /> },
+      { name: "ABAP (Fundamentals)", icon: <Terminal size={16} className="text-primary" /> }
+    ]
   }
 ];
 
@@ -72,12 +95,12 @@ export const Skills = () => {
                 <div className="grid grid-cols-2 gap-4">
                   {category.skills.map((skill) => (
                     <motion.div
-                      key={skill}
+                      key={skill.name}
                       whileHover={{ scale: 1.05, x: 5 }}
                       className="flex items-center gap-3 px-4 py-3 glass rounded-xl border border-white/5 hover:bg-white/10 transition-all cursor-default"
                     >
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                      <span className="text-sm font-medium text-white/80">{skill}</span>
+                      {skill.icon}
+                      <span className="text-sm font-medium text-white/80">{skill.name}</span>
                     </motion.div>
                   ))}
                 </div>
