@@ -1,9 +1,11 @@
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
-import { Timeline } from "./components/Timeline";
+import { About } from "./components/About";
+import { Experience } from "./components/Experience";
 import { Projects } from "./components/Projects";
-import { Certifications } from "./components/Certifications";
 import { Skills } from "./components/Skills";
+import { Education } from "./components/Education";
+import { Certifications } from "./components/Certifications";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { GlowCursor } from "./components/GlowCursor";
@@ -18,23 +20,25 @@ function App() {
   });
 
   return (
-    <div className="relative">
+    <div className="relative bg-[#0a0a0c] text-white min-h-screen">
       <GlowCursor />
       
       {/* Scroll Progress Bar */}
       <motion.div
-        className="fixed top-0 left-0 right-0 h-1 bg-primary z-[200] origin-left"
+        className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-secondary z-[200] origin-left"
         style={{ scaleX }}
       />
 
       <Navbar />
       
-      <main>
+      <main className="relative z-10">
         <Hero />
-        <Timeline />
+        <About />
+        <Experience />
         <Projects />
-        <Certifications />
         <Skills />
+        <Education />
+        <Certifications />
         <Contact />
       </main>
 
@@ -44,3 +48,4 @@ function App() {
 }
 
 export default App;
+

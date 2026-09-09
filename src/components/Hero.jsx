@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight, ExternalLink } from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -18,30 +18,30 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="inline-block px-4 py-1.5 glass rounded-full text-xs font-semibold tracking-wider text-primary mb-6"
+            className="inline-block px-4 py-1.5 glass rounded-full text-xs font-semibold tracking-wider text-primary mb-6 border border-primary/30 shadow-[0_0_15px_rgba(139,92,246,0.3)]"
           >
-            AVAILABLE FOR SOFTWARE DEVELOPER ROLE
+            AVAILABLE FOR SOFTWARE DEVELOPER / FRONTEND DEVELOPER ROLES
           </motion.div>
           
-          <h1 className="text-4xl md:text-7xl font-extrabold mb-6 leading-tight whitespace-nowrap">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
             I'm <span className="glow-text uppercase">SVARA SHAH</span>
           </h1>
-          
-          <p className="text-lg md:text-xl text-white/80 font-medium mb-3 leading-relaxed">
-            Crafting elegant, user-focused web experiences with precision and purpose.
+
+          <p className="text-xl md:text-2xl font-semibold text-secondary mb-6 tracking-wide">
+            Computer Science Engineering Student <span className="text-white/40">|</span> Software Developer
           </p>
           
-          <p className="text-base text-white/60 mb-6 max-w-xl leading-relaxed">
-            Computer Science Engineering student passionate about web development, SAP technologies, and building scalable digital solutions. I enjoy creating clean, user-friendly applications while continuously improving my problem-solving and development skills through real-world projects and hands-on learning.
+          <p className="text-base md:text-lg text-white/80 font-normal mb-8 max-w-xl leading-relaxed">
+            "Building practical web applications and solving real-world problems through software engineering, frontend development, and strong programming fundamentals."
           </p>
 
           <div className="flex flex-col gap-3 mb-10">
-            <span className="font-semibold text-primary/80 uppercase tracking-wider text-sm">Core Skills</span>
-            <div className="flex flex-wrap items-center gap-3 text-sm font-medium">
-              <span className="px-4 py-2 rounded-full glass border border-white/10 text-white/80">HTML, CSS & JavaScript</span>
-              <span className="px-4 py-2 rounded-full glass border border-white/10 text-white/80">Data Structures & Problem Solving</span>
-              <span className="px-4 py-2 rounded-full glass border border-white/10 text-white/80">SAP Technologies</span>
-              <span className="px-4 py-2 rounded-full glass border border-white/10 text-white/80">UI/UX Web Dev</span>
+            <span className="font-semibold text-primary/90 uppercase tracking-wider text-xs">Core Competencies</span>
+            <div className="flex flex-wrap items-center gap-2.5 text-xs font-medium">
+              <span className="px-3.5 py-1.5 rounded-full glass border border-white/10 text-white/90 bg-white/5">Frontend Development</span>
+              <span className="px-3.5 py-1.5 rounded-full glass border border-white/10 text-white/90 bg-white/5">SAP MM &amp; Procure-to-Pay</span>
+              <span className="px-3.5 py-1.5 rounded-full glass border border-white/10 text-white/90 bg-white/5">Data Structures &amp; Algorithms</span>
+              <span className="px-3.5 py-1.5 rounded-full glass border border-white/10 text-white/90 bg-white/5">Java &amp; TypeScript</span>
             </div>
           </div>
 
@@ -50,24 +50,25 @@ export const Hero = () => {
               href="#projects"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-primary rounded-xl font-bold flex items-center gap-2 hover:bg-primary/90 transition-colors shadow-lg shadow-primary/25"
+              className="px-8 py-4 bg-primary text-white rounded-xl font-bold flex items-center gap-2 hover:bg-primary/90 transition-all shadow-lg shadow-primary/30"
             >
-              View My Work <ArrowRight size={20} />
+              VIEW PROJECTS <ArrowRight size={18} />
             </motion.a>
             <motion.a
               href="https://drive.google.com/file/d/1gjqWPPAp_nj3GoIWa6Z7AfjtSI44aZjH/view?usp=sharing"
               target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 glass-card font-bold flex items-center gap-2"
+              className="px-8 py-4 glass-card font-bold flex items-center gap-2 text-white hover:border-primary/50 transition-colors"
             >
-              Resume <Download size={20} />
+              VIEW RESUME <ExternalLink size={18} />
             </motion.a>
           </div>
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.8, rotate: 5 }}
+          initial={{ opacity: 0, scale: 0.8, rotate: 3 }}
           animate={{ opacity: 1, scale: 1, rotate: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
           className="relative flex justify-center"
@@ -80,7 +81,7 @@ export const Hero = () => {
             <div className="absolute inset-2 rounded-full overflow-hidden border-4 border-white/10 shadow-2xl">
               <img
                 src="/profile_new.jpg"
-                alt="Svara Pankilkumar Shah"
+                alt="Svara Shah"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -90,3 +91,4 @@ export const Hero = () => {
     </section>
   );
 };
+
