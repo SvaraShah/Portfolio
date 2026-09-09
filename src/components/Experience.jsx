@@ -90,8 +90,8 @@ export const Experience = () => {
               </div>
 
               <div className="flex flex-wrap items-center gap-3">
-                <span className="px-4 py-1.5 glass rounded-full text-xs font-bold tracking-wider text-primary border border-primary/30">
-                  2026 – PRESENT
+                <span className="px-4 py-1.5 glass rounded-full text-xs font-bold tracking-wider text-primary border border-primary/30 uppercase">
+                  15TH JUNE 2026 – 15TH DEC 2026
                 </span>
                 <span className="px-4 py-1.5 glass rounded-full text-xs font-bold tracking-wider text-white/80 border border-white/10">
                   ENTERPRISE OPERATIONS
