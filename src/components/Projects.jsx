@@ -6,7 +6,7 @@ const featuredProject = {
   subtitle: "Matrimonial Matchmaking Dashboard",
   category: "FEATURED • FRONTEND PROJECT",
   description: "A modern, responsive matchmaking dashboard designed for professional matchmakers to manage client profiles, explore potential matches, track follow-ups, and visualize matchmaking activity through an intuitive administrative interface.",
-  image: "/inventory_project.png", // Will render with custom dashboard visual frame or image
+  image: "/matchmaker_project.jpg", // Custom matchmaking dashboard visual frame
   liveLink: "https://match-maker-six.vercel.app/admin",
   githubLink: "https://github.com/SvaraShah/MatchMaker",
   tags: ["React", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS"],
@@ -153,7 +153,7 @@ export const Projects = () => {
               <div className="glass p-2 rounded-2xl border border-white/10 overflow-hidden shadow-2xl group">
                 <div className="relative aspect-video sm:aspect-square lg:aspect-video rounded-xl overflow-hidden bg-black/40">
                   <img
-                    src="/inventory_project.png"
+                    src={featuredProject.image}
                     alt="MatchMaker Matrimonial Matchmaking Dashboard"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />

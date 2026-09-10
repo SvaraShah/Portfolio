@@ -12,13 +12,13 @@ const suzlonBullets = [
 ];
 
 const p2pSteps = [
-  { id: 1, title: "Requirement", subtitle: "Need Identification" },
-  { id: 2, title: "Purchase Requisition", subtitle: "PR Creation & Review" },
-  { id: 3, title: "Vendor Selection", subtitle: "Sourcing & Evaluation" },
-  { id: 4, title: "Purchase Order", subtitle: "PO Issuance" },
-  { id: 5, title: "Goods Receipt", subtitle: "GR Inspection & Entry" },
-  { id: 6, title: "Invoice Verification", subtitle: "3-Way Matching" },
-  { id: 7, title: "Payment", subtitle: "Financial Settlement" }
+  { id: 1, title: "Purchase Requisition (PR)", subtitle: "PR Creation & Requirement" },
+  { id: 2, title: "Release PR", subtitle: "PR Approval & Release Strategy" },
+  { id: 3, title: "Purchase Order (PO)", subtitle: "PO Creation & Sourcing" },
+  { id: 4, title: "Release PO", subtitle: "PO Approval & Management Sign-off" },
+  { id: 5, title: "GR / SES", subtitle: "Goods Receipt (MIGO) & Service Entry Sheet" },
+  { id: 6, title: "Invoice Verification", subtitle: "Invoice Parking/Posting & 3-Way Match (MIRO)" },
+  { id: 7, title: "Payment & Settlement", subtitle: "Financial Clearing & Accounts Payable" }
 ];
 
 const highlightTags = [
